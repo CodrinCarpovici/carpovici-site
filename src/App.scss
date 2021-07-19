@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$primary-white: #fff;
+$primary-dark-grey: #6e6c6c;
+$primary-grey: #9c9a9a;
+$primary-violet: #7732e6;
+$primary-red: #ff5549;
+$primary-hover-red: #ad2a06;
+$primary-blue: #07c3fc;
+$primary-blue-dark: #1093bb;
+$primary-dark: rgb(52, 58, 64);
+$primary-light-violet: #ac8be0;
+$primary-background-gradient: linear-gradient(
+  to right,
+  $primary-light-violet,
+  $primary-blue
+);
+$primary-background-gradient-vertical: linear-gradient(
+  to bottom,
+  $primary-light-violet,
+  $primary-blue
+);
+$primary-background-gradient-vertical-hover: linear-gradient(
+  to bottom,
+  $primary-violet,
+  $primary-blue-dark
+);
+$primary-font-family: "Roboto Condensed", sans-serif;
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/******************************** SCROLLBAR ********************************/
+/*::-webkit-scrollbar the scrollbar.
+  ::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+  ::-webkit-scrollbar-thumb the draggable scrolling handle.
+  ::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+  ::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+  ::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+  ::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements.*/
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-button {
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-background-gradient-vertical;
+  border-radius: 0.5vw;
+  min-height: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: 0.3s;
+  background: $primary-background-gradient-vertical-hover;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  border-radius: 0.5vw;
+  left: 99.5vh;
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-track-piece {
+}
+
+::-webkit-scrollbar-corner {
+}
+
+::-webkit-resizer {
+}
+
+body {
+  font-family: $primary-font-family !important;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+  overflow-x: hidden;
+  position: relative;
+
+  /******************************** NAVBAR **********************************/
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0px !important;
+    margin: 0px !important;
+
+    .container {
+      padding-top: 0px !important;
+      .logo {
+        width: 13.25rem;
+        vertical-align: middle;
+        padding: 0 !important;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+      }
+
+      .hamburger {
+        color: $primary-white;
+        vertical-align: middle;
+      }
+
+      .navbar-toggler:focus,
+      .navbar-toggler:active {
+        transition: ease-in-out 0.2s;
+        border-color: $primary-violet;
+      }
+      /*--------- MENU LINKS ----------*/
+      nav a.nav-link {
+        font-size: 0.8rem;
+        letter-spacing: 0.0375rem;
+        cursor: pointer;
+      }
+
+      nav ul li {
+        text-transform: uppercase;
+      }
+
+      .navbar-nav > li > a {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+        color: $primary-white !important;
+        border-top: 0.1875rem solid $primary-dark;
+      }
+
+      .navbar-brand {
+        max-width: 17.25rem;
+        padding: 0 !important;
+        height: 6rem !important;
+        text-align: center;
+        position: relative;
+      }
+
+      .navbar-nav > li > a.active,
+      .navbar-nav > li > a.active:focus {
+        border-top: 0.1875rem solid $primary-violet;
+      }
+
+      .navbar-nav > li > a:hover {
+        border-top: 0.1875rem solid $primary-violet;
+      }
+    }
+  }
+  /******************************** HEADER ************************************/
+  .header-wrapper {
+    position: relative;
+    background: url(./assets/img/keyboard.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+
+    .main-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: $primary-font-family;
+      font-weight: 500;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+
+      h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        background: linear-gradient(to right, $primary-violet, $primary-blue);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /*---------- TYPED TEXT -----------*/
+      .typed-string {
+        font-size: 2rem;
+        color: $primary-white;
+      }
+
+      /*---------- HEADER MAIN OFFER BUTTON -----------*/
+      .btn-main-offer {
+        border: 1px solid $primary-red;
+        text-transform: uppercase;
+        border-radius: 0;
+        padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+        color: $primary-white;
+        margin-top: 2rem;
+      }
+
+      .btn-main-offer:hover {
+        text-decoration: none;
+        background-color: $primary-hover-red;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  /*---------- PARTICLES -----------*/
+  .tsparticles-canvas-el {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .particles-canvas {
+      display: none;
+    }
+
+    .main-info h1 {
+      font-size: 1.5rem !important;
+    }
+
+    .typed-string {
+      font-size: 1.7rem;
+    }
+    .navbar-brand {
+      width: 7rem;
+    }
+  }
+
+  /******************************* ABOUT ME ***********************************/
+  #about {
+    position: relative;
+    font-family: $primary-font-family;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+  }
+
+  /*************** ABOUT TEXT *******************/
+  #about-header {
+    font-size: 2.813rem;
+    font-weight: 700;
+    margin: 0 0 0.625rem;
+    color: $primary-violet !important;
+  }
+
+  #about-subHeader {
+    font-weight: 600;
+    margin-bottom: 0.938rem;
+    color: $primary-blue !important;
+  }
+
+  .about-p {
+    font-size: 1.125rem;
+  }
+
+  /************* ABOUT BUTTON *****************/
+  .about-text .btn-bar {
+    padding-top: 0.5rem;
+  }
+  .about-text .btn-bar a {
+    min-width: 9.375rem;
+    text-align: center;
+    margin-right: 0.625rem;
+  }
+  .px-btn.theme {
+    background: $primary-violet;
+    color: #ffffff;
+    border: 0.125rem solid $primary-red;
+  }
+  .px-btn {
+    padding: 0 1.25rem;
+    line-height: 2.625rem;
+    border: 0.125rem solid transparent;
+    position: relative;
+    display: inline-block;
+    background: none;
+    border: none;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    border-radius: 0.313rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .px-btn:hover {
+    background-color: $primary-white;
+    color: $primary-violet;
+  }
+
+  .px-btn.theme-t {
+    background: transparent;
+    border: 0.125rem solid $primary-red;
+    color: $primary-violet;
+    margin-left: 3px;
+  }
+
+  .px-btn.theme:hover {
+    transition: ease-in-out 0.2s;
+    color: $primary-blue;
+    background-color: $primary-violet;
+  }
+
+  .px-btn.theme-t:hover {
+    transition: ease-in-out 0.2s;
+    background-color: $primary-hover-red;
+    color: $primary-white;
+  }
+
+  /************* ABOUT IMAGE ******************/
+  .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-img {
+    border: 0.188rem solid $primary-violet;
+    padding: 0.625rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-left: 5.5%;
+  }
+
+  /********* ABOUT MEDIA QUERIES **************/
+
+  @media (max-width: 768px) {
+    .about-img {
+      height: 15rem;
+      width: 15rem;
+      margin-left: 5.5%;
+      margin-right: 5%;
+    }
+
+    .about-text h3 {
+      font-size: 2.188rem;
+    }
+
+    .about-text h4 {
+      font-size: 1.125rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .about-img {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+
+  @media (max-width: 280px) {
+    .px-btn {
+      margin-left: 20%;
+      margin-top: 3%;
+    }
+
+    .px-btn.theme {
+      margin-left: 23%;
+    }
+
+    .px-btn.theme-t {
+      margin-left: 20%;
+    }
+  }
+
+  /******************************* SERVICES ***********************************/
+  .services {
+    text-align: center;
+    padding-bottom: 2rem;
+    background: $primary-background-gradient;
+
+    h1 {
+      color: $primary-dark;
+      text-transform: uppercase;
+    }
+
+    .circle {
+      position: relative;
+      margin: 0.375rem auto;
+      background: $primary-background-gradient;
+      border-radius: 50%;
+      width: 3.125rem;
+      height: 3.125rem;
+    }
+
+    .icon {
+      font-size: 1.4rem;
+      color: $primary-white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box {
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      display: inline-block;
+      border-bottom: 0.3125rem solid $primary-violet;
+      padding: 0.625rem;
+      margin-bottom: 1.875rem;
+      background: $primary-white;
+    }
+
+    .box:hover {
+      background: $primary-violet;
+      border-bottom: 0.3125rem solid $primary-dark;
+
+      .icon {
+        color: $primary-dark;
+      }
+
+      .circle {
+        background-color: $primary-white;
+      }
+
+      h3 {
+        color: $primary-blue;
+      }
+
+      p {
+        color: $primary-white;
+      }
+    }
+  }
+
+  /******************************* TECHNOLOGIES ********************************/
+
+  .technologies {
+    position: relative;
+    padding: 0.7rem;
+    background: url('./assets/img/technologies-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+
+    
+    h1 {
+      text-transform: uppercase;
+      color: $primary-light-violet;
+    }
+    .technologies-wrapper {
+      padding: 3.125rem 0;
+      overflow: hidden;
+      position: relative;
+
+      .timeline-block {
+        width: calc(50% + 0.5rem);
+        display: flex;
+        justify-content: space-between;
+        clear: both;
+
+        .timeline-content {
+          width: 95%;
+          padding: 0 0.9375rem;
+          color: $primary-dark-grey;
+          direction: ltr;
+
+          h3 {
+            margin-top: 0.3125rem;
+            color: $primary-red;
+          }
+        }
+      }
+
+      .timeline-block-right {
+        float: right;
+      }
+
+      .timeline-block-left {
+        float: left;
+        direction: rtl;
+      }
+
+      .marker {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 0.3125rem solid $primary-blue;
+        background: $primary-violet;
+        margin-top: 0.625rem;
+        z-index: 3;
+      }
+
+      /********** MEDIA **********/
+      @media (max-width: 768px) {
+        .timeline-block-right {
+          float: none;
+          width: 100%;
+        }
+
+        .timeline-block-left {
+          float: none;
+          width: 100%;
+          direction: ltr;
+        }
+      }
+    }
+
+    .technologies-wrapper::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      margin-left: -0.0625rem;
+      width: 0.125rem;
+      height: 100%;
+      background: $primary-blue;
+      z-index: 1;
+    }
+
+    /************* MEDIA ***************/
+    @media (max-width: 768px) {
+      .technologies-wrapper::before {
+        left: 0.5rem;
+        margin-bottom: 1.875rem;
+      }
+
+      .technologies .container {
+        padding-left: 0;
+      }
+    }
+
+
+  }
+}
