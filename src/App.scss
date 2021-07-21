@@ -410,6 +410,7 @@ body {
       padding: 0.625rem;
       margin-bottom: 1.875rem;
       background: $primary-white;
+      transition: 0.3s ease-in-out;
     }
 
     .box:hover {
@@ -439,11 +440,10 @@ body {
   .technologies {
     position: relative;
     padding: 0.7rem;
-    background: url('./assets/img/technologies-desktop.jpg');
+    background: url("./assets/img/technologies-desktop.jpg");
     background-size: cover;
     background-position: center;
 
-    
     h1 {
       text-transform: uppercase;
       color: $primary-light-violet;
@@ -529,7 +529,105 @@ body {
         padding-left: 0;
       }
     }
+  }
 
+  /******************************** PROJECTS ********************************/
+  .projects-wrapper {
+    background: $primary-background-gradient;
+    padding: 3rem 0;
 
+    h1 {
+      color: $primary-violet;
+    }
+    
+    .projects-img-box {
+      position: relative;
+      margin: 1rem;
+
+      .projects-img {
+        width: 15rem;
+        border: 1px solid $primary-violet;
+        padding: 0.5rem 0.5rem;
+      }
+
+      /************* OVERFLOW BOX ***************/
+      .overflow {
+        position: absolute;
+        opacity: 0;
+        background: $primary-dark;
+        width: 15rem;
+        height: 10.352rem;
+        top: 0;
+        border: 1px solid $primary-blue;
+        cursor: pointer;
+      }
+
+      .projects-icon {
+        position: absolute;
+        opacity: 0;
+        margin-left: -8rem;
+        margin-top: 3.6rem;
+        color: $primary-hover-red;
+        font-size: 1.5rem;
+      }
+    }
+
+    .projects-img-box:hover .overflow {
+      opacity: 60%;
+      transition: 0.3s ease-in-out;
+    }
+
+    .projects-img-box:hover .projects-icon {
+      opacity: 70%;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    /*************** POPUP BOX *******************/
+    .projects-img-popupbox {
+      width: 45rem;
+      padding: 0.5rem 0.5 rem;
+    }
+
+    .hyper-link {
+      cursor: pointer;
+      color: $primary-violet;
+    }
+
+    .hyper-link:hover {
+      color: $primary-red;
+    }
+
+    /*************** MEDIA POPUP BOX *******************/
+    @media (max-width: 768px) {
+      .projects-img-popupbox {
+        width: 90% !important;
+      }
+    }
+
+    @media (max-height: 540px) {
+      .popupbox-wrapper {
+        height: 90% !important;
+      }
+
+      .projects-img-popupbox {
+        width: 50% !important;
+        position: relative;
+        left: 25%;
+      }
+    }
+
+    @media (max-height: 375px) {
+      .popupbox-wrapper {
+        font-size: 75%;
+      }
+    }
+
+    @media (max-height: 280px) {
+      .projects-img-popupbox {
+        width: 30% !important;
+        position: relative;
+        left: 35%;
+      }
+    }
   }
 }

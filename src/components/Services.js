@@ -14,7 +14,7 @@ const Services = () => {
                                 <FontAwesomeIcon className="icon"icon={faFileCode} size="2x" />
                             </div>
                             <h3>Web Development</h3>
-                            <p>Building Web applications with proven technologies of the latest standard</p>
+                            <p>Building Web applications with proven technologies at the latest standard</p>
                         </div>
                     </div>
                     {/* - */}
