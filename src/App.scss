@@ -9,6 +9,7 @@ $primary-hover-red: #ad2a06;
 $primary-blue: #07c3fc;
 $primary-blue-dark: #1093bb;
 $primary-dark: rgb(52, 58, 64);
+$primary-green: rgb(55, 216, 40);
 $primary-light-violet: #ac8be0;
 $primary-background-gradient: linear-gradient(
   to right,
@@ -193,20 +194,7 @@ body {
       }
 
       /*---------- HEADER MAIN OFFER BUTTON -----------*/
-      .btn-main-offer {
-        border: 1px solid $primary-red;
-        text-transform: uppercase;
-        border-radius: 0;
-        padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-        color: $primary-white;
-        margin-top: 2rem;
-      }
-
-      .btn-main-offer:hover {
-        text-decoration: none;
-        background-color: $primary-hover-red;
-        transition: 0.2s ease-in-out;
-      }
+      
     }
   }
 
@@ -539,7 +527,7 @@ body {
     h1 {
       color: $primary-violet;
     }
-    
+
     .projects-img-box {
       position: relative;
       margin: 1rem;
@@ -629,5 +617,118 @@ body {
         left: 35%;
       }
     }
+  }
+
+  /******************************** CONTACTS ********************************/
+  .contacts {
+    background: $primary-dark;
+    padding: 3rem 0;
+
+    h1 {
+      color: $primary-violet;
+      padding: 1.3rem 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $primary-blue;
+    }
+
+    /*************** INPUTS ********************/
+    input, textarea {
+      width:100%;
+      box-sizing: border-box;
+      background: none;
+      resize:none;
+      border: 0;
+      border-bottom: 0.125rem transparent;
+      border-radius: 0;
+      color: $primary-blue;
+      outline: 0 !important;
+      box-shadow: none !important;
+      margin-bottom: 1rem;
+      padding-left: 0 !important;
+    }
+
+    input.form-control, textarea.form-control {
+      margin: -0.25rem 0;
+    }
+
+    textarea {
+      height: 12.5rem !important;
+    }
+
+    .container {
+      padding: 4rem 0;
+    }
+
+    input:focus, textarea:focus {
+      background: transparent;
+      color: $primary-blue;
+    }
+
+   .contacts-btn {
+     margin: 1rem 0 0 0;
+     width: 100%;
+     background: none;
+   }
+
+   .line {
+     position: relative;
+     width: 0;
+     top: -0.8rem;
+     height: 0.125rem;
+     background: $primary-background-gradient;
+     display: inline-block;
+   }
+
+   input:focus+.line, textarea:focus+.line {
+     width: 100%;
+     transition: width 0.5s ease-in-out;
+   }
+
+   /*************** VALIDATION ********************/
+   .error-message{
+     color: $primary-white;
+     background: $primary-red;
+     text-align: left;
+
+   }
+
+   .success-message {
+      color: $primary-green;
+   }
+   
+
+    /*************** MEDIA ********************/
+    @media (max-width: 768px) {
+      .contacts {
+        overflow-x: hidden;
+      }
+
+      .container {
+        padding: 0 1.5rem;
+      }
+
+      p {
+        padding: 0 0.9rem;
+      }
+    }
+  }
+
+  /*************** BUTTONS *******************/
+  .btn-main-offer {
+    border: 1px solid $primary-red;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: $primary-white;
+    margin-top: 2rem;
+  }
+
+  .btn-main-offer:hover {
+    text-decoration: none;
+    background-color: $primary-hover-red;
+    transition: 0.2s ease-in-out;
   }
 }

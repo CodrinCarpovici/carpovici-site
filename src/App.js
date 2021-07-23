@@ -7,6 +7,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
+import Contacts from './components/Contacts';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Services />
         <Technologies />
         <Projects />
+        <Contacts />
       </>
     </div>
   );
