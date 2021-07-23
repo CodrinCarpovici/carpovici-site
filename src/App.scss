@@ -731,4 +731,36 @@ body {
     background-color: $primary-hover-red;
     transition: 0.2s ease-in-out;
   }
+
+  /******************************** FOOTER ********************************/
+
+  .footer {
+    background: $primary-dark;
+    color: $primary-grey;
+    padding: 3rem;
+
+    a {
+      text-decoration: none;
+      color: $primary-grey;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $primary-violet;
+      cursor: pointer;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .mx-3 {
+      padding-top: 0.2rem;
+      border-radius: 50%;
+    }
+
+    .pt-3 {
+      font-size: 80%;
+    }
+  }
 }

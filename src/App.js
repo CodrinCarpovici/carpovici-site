@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Technologies />
         <Projects />
         <Contacts />
+        <Footer />
       </>
     </div>
   );
