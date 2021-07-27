@@ -8,7 +8,7 @@ $primary-red: #ff5549;
 $primary-hover-red: #ad2a06;
 $primary-blue: #07c3fc;
 $primary-blue-dark: #1093bb;
-$primary-dark: rgb(52, 58, 64);
+$primary-dark: #212529;
 $primary-green: rgb(55, 216, 40);
 $primary-light-violet: #ac8be0;
 $primary-background-gradient: linear-gradient(
@@ -29,11 +29,11 @@ $primary-background-gradient-vertical-hover: linear-gradient(
 $primary-font-family: "Roboto Condensed", sans-serif;
 
 html {
-  width: 100%;
-  height: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /******************************** SCROLLBAR ********************************/
@@ -79,90 +79,111 @@ html {
 ::-webkit-resizer {
 }
 
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $primary-blue;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 body {
   font-family: $primary-font-family !important;
-  width: 100%;
-  height: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
   margin: 0;
   padding: 0;
   overflow: overlay;
-  overflow-x: hidden;
-  position: relative;
+  overflow-x: hidden !important;
 
   /******************************** NAVBAR **********************************/
   .navbar {
-    position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
     padding: 0px !important;
     margin: 0px !important;
+    background: transparent;
 
     .container {
       padding-top: 0px !important;
+    }
+
+    .hamburger {
+      color: $primary-white;
+      vertical-align: middle;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+      transition: ease-in-out 0.2s;
+      border-color: $primary-violet;
+    }
+    /*--------- MENU LINKS ----------*/
+    .nav-link {
+      font-size: 0.8rem;
+      letter-spacing: 0.0375rem;
+      cursor: pointer;
+    }
+
+    ul li {
+      text-transform: uppercase;
+    }
+
+    a {
+      margin-right: 0.75rem;
+      margin-left: 0.75rem;
+      color: $primary-white !important;
+      border-top: 0.1875rem solid $primary-dark;
+    }
+
+    .navbar-brand {
+      max-width: 17.25rem;
+      padding: 0 !important;
+      height: 6rem !important;
+      text-align: center;
+      position: relative;
+    }
+
+    a.active,
+    a:focus {
+      border-top: 0.1875rem solid $primary-violet;
+    }
+    a:hover {
+      border-top: 0.1875rem solid $primary-violet;
+    }
+
+    .logo {
+      width: 13.25rem;
+      vertical-align: middle;
+      padding: 0 !important;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 280px) {
       .logo {
-        width: 13.25rem;
-        vertical-align: middle;
-        padding: 0 !important;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-50%);
-      }
-
-      .hamburger {
-        color: $primary-white;
-        vertical-align: middle;
-      }
-
-      .navbar-toggler:focus,
-      .navbar-toggler:active {
-        transition: ease-in-out 0.2s;
-        border-color: $primary-violet;
-      }
-      /*--------- MENU LINKS ----------*/
-      nav a.nav-link {
-        font-size: 0.8rem;
-        letter-spacing: 0.0375rem;
-        cursor: pointer;
-      }
-
-      nav ul li {
-        text-transform: uppercase;
-      }
-
-      .navbar-nav > li > a {
-        margin-right: 0.75rem;
-        margin-left: 0.75rem;
-        color: $primary-white !important;
-        border-top: 0.1875rem solid $primary-dark;
-      }
-
-      .navbar-brand {
-        max-width: 17.25rem;
-        padding: 0 !important;
-        height: 6rem !important;
-        text-align: center;
-        position: relative;
-      }
-
-      .navbar-nav > li > a.active,
-      .navbar-nav > li > a.active:focus {
-        border-top: 0.1875rem solid $primary-violet;
-      }
-
-      .navbar-nav > li > a:hover {
-        border-top: 0.1875rem solid $primary-violet;
+        width: 11.5rem;
       }
     }
   }
+
   /******************************** HEADER ************************************/
   .header-wrapper {
     position: relative;
     background: url(./assets/img/keyboard.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
 
     .main-info {
       display: flex;
@@ -194,16 +215,16 @@ body {
       }
 
       /*---------- HEADER MAIN OFFER BUTTON -----------*/
-      
     }
   }
 
   /*---------- PARTICLES -----------*/
-  .tsparticles-canvas-el {
+  .particles-canvas {
     position: absolute;
     height: 100vh;
     width: 100vw;
     z-index: 1;
+    overflow: hidden;
   }
 
   @media (max-width: 768px) {
@@ -428,9 +449,6 @@ body {
   .technologies {
     position: relative;
     padding: 0.7rem;
-    background: url("./assets/img/technologies-desktop.jpg");
-    background-size: cover;
-    background-position: center;
 
     h1 {
       text-transform: uppercase;
@@ -619,10 +637,23 @@ body {
     }
   }
 
+  @media (max-width: 768px) {
+    .projects-img-box {
+      align-content: center;
+    }
+  }
+
   /******************************** CONTACTS ********************************/
   .contacts {
     background: $primary-dark;
     padding: 3rem 0;
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+
+    .contacts-wrapper {
+      margin-top: 5%;
+    }
 
     h1 {
       color: $primary-violet;
@@ -635,11 +666,12 @@ body {
     }
 
     /*************** INPUTS ********************/
-    input, textarea {
-      width:100%;
+    input,
+    textarea {
+      width: 100%;
       box-sizing: border-box;
       background: none;
-      resize:none;
+      resize: none;
       border: 0;
       border-bottom: 0.125rem transparent;
       border-radius: 0;
@@ -650,7 +682,8 @@ body {
       padding-left: 0 !important;
     }
 
-    input.form-control, textarea.form-control {
+    input.form-control,
+    textarea.form-control {
       margin: -0.25rem 0;
     }
 
@@ -662,43 +695,43 @@ body {
       padding: 4rem 0;
     }
 
-    input:focus, textarea:focus {
+    input:focus,
+    textarea:focus {
       background: transparent;
       color: $primary-blue;
     }
 
-   .contacts-btn {
-     margin: 1rem 0 0 0;
-     width: 100%;
-     background: none;
-   }
+    .contacts-btn {
+      margin: 1rem 0 0 0;
+      width: 100%;
+      background: none;
+    }
 
-   .line {
-     position: relative;
-     width: 0;
-     top: -0.8rem;
-     height: 0.125rem;
-     background: $primary-background-gradient;
-     display: inline-block;
-   }
+    .line {
+      position: relative;
+      width: 0;
+      top: -0.8rem;
+      height: 0.125rem;
+      background: $primary-background-gradient;
+      display: inline-block;
+    }
 
-   input:focus+.line, textarea:focus+.line {
-     width: 100%;
-     transition: width 0.5s ease-in-out;
-   }
+    input:focus + .line,
+    textarea:focus + .line {
+      width: 100%;
+      transition: width 0.5s ease-in-out;
+    }
 
-   /*************** VALIDATION ********************/
-   .error-message{
-     color: $primary-white;
-     background: $primary-red;
-     text-align: left;
+    /*************** VALIDATION ********************/
+    .error-message {
+      color: $primary-white;
+      background: $primary-red;
+      text-align: left;
+    }
 
-   }
-
-   .success-message {
+    .success-message {
       color: $primary-green;
-   }
-   
+    }
 
     /*************** MEDIA ********************/
     @media (max-width: 768px) {
@@ -716,6 +749,12 @@ body {
     }
   }
 
+  @media (max-width: 360px) {
+    .contacts {
+      height: 100%;
+    }
+  }
+
   /*************** BUTTONS *******************/
   .btn-main-offer {
     border: 1px solid $primary-red;
@@ -724,6 +763,7 @@ body {
     padding: 0.625rem 0.75rem 0.75rem 0.75rem;
     color: $primary-white;
     margin-top: 2rem;
+    cursor: pointer;
   }
 
   .btn-main-offer:hover {
@@ -732,16 +772,28 @@ body {
     transition: 0.2s ease-in-out;
   }
 
+  .clipboard-btn {
+    background: $primary-dark;
+    color: $primary-grey;
+    box-shadow: 1px 2px;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+  }
+
   /******************************** FOOTER ********************************/
 
   .footer {
     background: $primary-dark;
     color: $primary-grey;
     padding: 3rem;
+    width: 100%;
+    height: 20%;
+    display: inline-block;
 
     a {
       text-decoration: none;
       color: $primary-grey;
+      font-size: 15px;
     }
 
     a:hover {
@@ -752,11 +804,12 @@ body {
 
     p {
       margin-bottom: 0;
+      font-size: 15px;
     }
 
     .mx-3 {
       padding-top: 0.2rem;
-      border-radius: 50%;
+      border-radius: 100px;
     }
 
     .pt-3 {

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Technologies = () => {
     return (
-        <div className="technologies">
+        <div id="technologies" className="technologies">
             <div className="d-flex justify-content-center my-5">
                 <h1>Technologies</h1>
             </div>

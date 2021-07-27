@@ -1,38 +1,39 @@
 import logo from '../assets/logo/logo_small.png';
+import { Link } from 'react-scroll';
 //REACT FONT AWESOME
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar transparent navbar-expand-lg navbar-light fixed-top">
             <div className="container">
 
-                <a className="navbar-brand" href="#"><img className='logo' src={logo} alt="logo"></img></a>
+                <a className="navbar-brand" href="home"><img className='logo' src={logo} alt="logo"></img></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon className="hamburger" icon={faBars} />
                 </button>
 
                 <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul className="navbar-nav">
+                    <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
 
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            <Link to="home" offset={-95} className="nav-link">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#about">About Me</a>
+                            <Link to="about" offset={-95} className="nav-link">About Me</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Projects</a>
+                            <Link to="projects" offset={-95} className="nav-link">Projects</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Services</a>
+                            <Link to="services" offset={-95} className="nav-link">Services</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Technologies</a>
+                            <Link to="technologies" offset={-95} className="nav-link">Technologies</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contacts</a>
+                            <Link to="contacts" offset={-95} className="nav-link">Contacts</Link>
                         </li>
                     </ul>
 

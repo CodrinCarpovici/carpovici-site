@@ -4,7 +4,7 @@ import { faDesktop, faFileCode, faMobile } from '@fortawesome/free-solid-svg-ico
 
 const Services = () => {
     return (
-        <div className="services">
+        <div id="services" className="services">
             <h1 className="py-5"> My Services </h1>
             <div className="container">
                 <div className="row  justify-content-md-center">
@@ -14,7 +14,7 @@ const Services = () => {
                                 <FontAwesomeIcon className="icon"icon={faFileCode} size="2x" />
                             </div>
                             <h3>Web Development</h3>
-                            <p>Building Web applications with proven technologies at the latest standard</p>
+                            <p>Building Web applications using proven technologies at the latest standard</p>
                         </div>
                     </div>
                     {/* - */}
