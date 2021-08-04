@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
+import contactsAvatar from '../assets/img/contactsAvatar.svg'
+import greyBG from '../assets/img/greyBG.png'
+import greyBG2 from '../assets/img/greyBG2.png'
 import { useForm } from 'react-hook-form';
 
 const Contacts = () => {
@@ -37,15 +40,23 @@ const Contacts = () => {
 
     return (
         <div id="contacts" className="contacts align-items-center">
+
             <div className="contacts-wrapper">
+                <div className="avatar-wrapper d-flex justify-content-center">
+                    <img className="grey-bg-line" src={greyBG2} alt="greyBG2"></img>
+                    <img className="grey-bg" src={greyBG} alt="greyBG"></img>
+                    <img className="c-Avatar" src={contactsAvatar} alt="cAvatar"></img>
+                </div>
                 <div className="text-center">
-                    <h1>Contact Me</h1>
+                    <div className="d-flex justify-content-center my-5">
+                        <h1 className="header">Contact Me</h1>
+                    </div>
                     <p>Please fill out the form below.</p>
                     <span className="success-message">{successMessage}</span>
                 </div>
                 <div className="container">
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div className="row">
+                        <div className="row mb-1">
                             <div className="col-md-6 col-xs-12">
                                 {/* NAME INPUT */}
                                 <div className="text-center">
@@ -78,20 +89,18 @@ const Contacts = () => {
                                         id="text"
                                         type="text"
                                         className="form-control"
-                                        placeholder="Phone Number"
+                                        placeholder="Phone Number (Optional)"
                                         name="phone"
                                         {...register("phone",
                                             {
-                                                required: true,
+                                                required: false,
                                             }
                                         )}
                                     />
                                     <div className="line"></div>
 
                                 </div>
-                                {errors.phone && errors.phone.type === "required" && (
-                                    <span className="error-message" role="alert">Please add your phone number</span>
-                                )}
+
 
                                 {/* EMAIL INPUT */}
                                 <div className="text-center">

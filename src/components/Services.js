@@ -1,11 +1,17 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop, faFileCode, faMobile } from '@fortawesome/free-solid-svg-icons'
+import servicesBG from '../assets/img/servicesBG.svg'
 
 const Services = () => {
     return (
         <div id="services" className="services">
-            <h1 className="py-5"> My Services </h1>
+             <div className="d-flex justify-content-center my-5">
+            <h1 className="header"> My Services </h1>
+             </div>
+             <div className="services-bg-wrapper row flex-row justify-content-center mb-5">
+                 <img className="services-bg" src={servicesBG} alt="servicesBG"></img>
+             </div>
             <div className="container">
                 <div className="row  justify-content-md-center">
                     <div className="col-md">

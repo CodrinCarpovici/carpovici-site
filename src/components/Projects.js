@@ -1,60 +1,78 @@
 import React from 'react'
 import underConstruction from '../assets/img/underConstruction.jpg'
+import faqCard from '../assets/img/faqCard.png'
+import taskTracker from '../assets/img/taskTracker.png'
+import projectsBg from '../assets/img/projectsBG.svg'
 // FONT AWESOME IMPORTS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 // REACT POPUPBOX
-import { PopupManager, PopupboxContainer, PopupboxManager } from 'react-popupbox'
-
-import "react-popupbox/dist/react-popupbox.css"
+import { PopupboxManager, PopupboxContainer } from "react-popupbox";
+import "react-popupbox/dist/react-popupbox.css";
 
 
 
 const Projects = () => {
 
-    // UNDER CONSTRUCTION
-    const openPopupboxUnderC = () => {
+    // FAQ Accordion Card
+    const openPopupboxFAQCard = () => {
 
         const content = (
             <>
-                <img className="projects-img-popupbox" src={underConstruction} alt="Under Construction..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                    quis eros nibh. Nulla purus ligula, suscipit lacinia odio volutpat,
-                    tristique condimentum sapien. </p>
-                <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("http://localhost:3000")}>http://localhost:3000</a>
+                <img className="projects-img-popupbox" src={faqCard} alt="FAQ Accordion Card" />
+                <p>This is a solution to the FAQ accordion card challenge on Frontend Mentor. Built using Vanilla JavaScript, semantic HTML5 markup and CSS custom properties.</p>
+                <div className="pop-link"><b>GitHub:</b> <a className="hyper-link" href="https://github.com/CodrinCarpovici/FrontEnd-Projects/tree/main/faq-accordion-card-main" onClick={() => window.open("https://github.com/CodrinCarpovici/FrontEnd-Projects/tree/main/faq-accordion-card-main")}>https://github.com/CodrinCarpovici/FrontEnd-Projects/tree/main/faq-accordion-card-main</a></div>
             </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({
+            content,
+            config: {
+                titleBar: {
+                    enable: true,
+                    text: 'FAQ Accordion Card'
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
-    const popupboxConfigUnderC = {
+    const popupboxConfigFAQCard = {
         titleBar: {
             enable: true,
-            text: "Under Construction..."
+            text: "FAQ Accordion Card"
         },
         fadeIn: true,
-        fadeInSpeed: 500,
+        fadeInSpeed: 500
     }
 
-    // UNDER CONSTRUCTION 2
-    const openPopupboxUnderC2 = () => {
+    // React Task Tracker
+    const openPopupboxTaskTracker = () => {
 
         const content = (
             <>
-                <img className="projects-img-popupbox" src={underConstruction} alt="Under Construction..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                    quis eros nibh. Nulla purus ligula, suscipit lacinia odio volutpat,
-                    tristique condimentum sapien. </p>
-                <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("http://localhost:3000")}>http://localhost:3000</a>
+                <img className="projects-img-popupbox" src={taskTracker} alt="React Task Tracker" />
+                <p>A fully functional Task Tracker built in React, using hooks, props, react-router and reusable components. </p>
+                <div className="pop-link"><b>GitHub:</b> <a className="hyper-link" href="https://github.com/CodrinCarpovici/ReactJS-Practice/tree/main/react-task-tracker" onClick={() => window.open("https://github.com/CodrinCarpovici/ReactJS-Practice/tree/main/react-task-tracker")}>https://github.com/CodrinCarpovici/ReactJS-Practice/tree/main/react-task-tracker</a></div>
             </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({
+            content,
+            config: {
+                titleBar: {
+                    enable: true,
+                    text: 'React Task Tracker'
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
-    const popupboxConfigUnderC2 = {
+    const popupboxConfigTaskTracker = {
         titleBar: {
             enable: true,
-            text: "Under Construction..."
+            text: "React Task Tracker"
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -66,19 +84,27 @@ const Projects = () => {
         const content = (
             <>
                 <img className="projects-img-popupbox" src={underConstruction} alt="Under Construction..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                    quis eros nibh. Nulla purus ligula, suscipit lacinia odio volutpat,
-                    tristique condimentum sapien. </p>
-                <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("http://localhost:3000")}>http://localhost:3000</a>
+                <p>Stay tuned for future projects! </p>
+                <div className="pop-link"><b></b> <a className="hyper-link" href="#" onClick={() => window.open()}></a></div>
             </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({
+            content,
+            config: {
+                titleBar: {
+                    enable: true,
+                    text: 'Coming Soon...'
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
     const popupboxConfigUnderC3 = {
         titleBar: {
             enable: true,
-            text: "Under Construction..."
+            text: "Coming Sooon..."
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -90,19 +116,27 @@ const Projects = () => {
         const content = (
             <>
                 <img className="projects-img-popupbox" src={underConstruction} alt="Under Construction..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                    quis eros nibh. Nulla purus ligula, suscipit lacinia odio volutpat,
-                    tristique condimentum sapien. </p>
-                <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("http://localhost:3000")}>http://localhost:3000</a>
+                <p>Stay tuned for future projects! </p>
+                <div className="pop-link"><b></b> <a className="hyper-link" href="#" onClick={() => window.open()}></a></div>
             </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({
+            content,
+            config: {
+                titleBar: {
+                    enable: true,
+                    text: 'Coming Soon...'
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
     const popupboxConfigUnderC4 = {
         titleBar: {
             enable: true,
-            text: "Under Construction..."
+            text: "Coming Soon..."
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -111,43 +145,49 @@ const Projects = () => {
     return (
         <div id="projects" className="projects-wrapper">
             <div className="container">
-                <h1 className="text-uppercase text-center py-5">Projects</h1>
+            <div className="d-flex justify-content-center my-5">
+                <h1 className="text-uppercase text-center header">Projects</h1>
+                </div>
                 <div className="img-box-wrapper row justify-content-center">
-                    <div className="col projects-img-box" onClick={openPopupboxUnderC}>
-                        <img className="projects-img" src={underConstruction} alt="Under Construction...">
+                    <div className="col projects-img-box justify-content-center " onClick={openPopupboxFAQCard}>
+                        <img className="projects-img" src={faqCard} alt="FAQ Accordion Card">
                         </img>
-                        <div className="overflow"></div>
+                        <div className="overflow"><h3 className="hover-text text-center">FAQ Card</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
                     </div>
 
                     {/* - */}
-                    <div className="col projects-img-box" onClick={openPopupboxUnderC2}>
-                        <img className="projects-img" src={underConstruction} alt="Under Construction...">
+                    <div className="col projects-img-box justify-content-center" onClick={openPopupboxTaskTracker}>
+                        <img className="projects-img" src={taskTracker} alt="React Task Tracker">
                         </img>
-                        <div className="overflow"></div>
+                        <div className="overflow"><h3 className="hover-text-b text-center">Task Tracker</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
                     </div>
                     {/* - */}
-                    <div className="col projects-img-box" onClick={openPopupboxUnderC3}>
+                    <div className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC3}>
                         <img className="projects-img" src={underConstruction} alt="Under Construction...">
                         </img>
-                        <div className="overflow"></div>
+                        <div className="overflow"><h3 className="hover-text-c text-center">Coming Soon...</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
                     </div>
                     {/* - */}
-                    <div className="col projects-img-box" onClick={openPopupboxUnderC4}>
+                    <div className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC4}>
                         <img className="projects-img" src={underConstruction} alt="Under Construction...">
                         </img>
-                        <div className="overflow"></div>
+                        <div className="overflow"><h3 className="hover-text-c text-center">Coming Soon...</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
                     </div>
                     {/* - */}
                 </div>
+                <PopupboxContainer {...popupboxConfigFAQCard} />
+                <PopupboxContainer {...popupboxConfigTaskTracker} />
+                <PopupboxContainer {...popupboxConfigUnderC3} />
+                <PopupboxContainer {...popupboxConfigUnderC4} />
             </div>
-            <PopupboxContainer {...popupboxConfigUnderC} />
-            <PopupboxContainer {...popupboxConfigUnderC2} />
-            <PopupboxContainer {...popupboxConfigUnderC3} />
-            <PopupboxContainer {...popupboxConfigUnderC4} />
+            <div className="img-wrapper">
+                <img className="projects-bg-img" src={projectsBg} alt="projectsBG"></img>
+            </div>
+
         </div>
     )
 }

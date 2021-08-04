@@ -1,15 +1,8 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import {
-    FacebookShareButton,
-    FacebookIcon,
-    TwitterShareButton,
-    TwitterIcon,
-    RedditShareButton,
-    RedditIcon,
-    LinkedinShareButton,
-    LinkedinIcon
-} from 'react-share'
+import { SocialIcon } from 'react-social-icons'
+import { faClipboard } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
     return (
@@ -29,7 +22,9 @@ const Footer = () => {
                                 onClick={() => navigator.clipboard.writeText('codrincarpovici@gmail.com')}
                             >
                                 codrincarpovici@gmail.com
+                                <span class="tooltiptext"><FontAwesomeIcon className="clipboard-icon" icon={faClipboard} /></span>
                             </button>
+                            
                         </div>
                     </div>
                     <div className="col">
@@ -37,16 +32,16 @@ const Footer = () => {
                             <div className="col">
                                 <Link to="home" className="footer-nav">Home</Link>
                                 <br />
-                                <Link to="about" className="footer-nav">About Me</Link>
+                                <Link to="about" offset={-196} className="footer-nav">About Me</Link>
                                 <br />
-                                <Link to="portfolio" className="footer-nav">Portfolio</Link>
+                                <Link to="projects" offset={0} className="footer-nav">Projects</Link>
                             </div>
                             <div className="col">
-                                <Link to="services" className="footer-nav">Services</Link>
+                                <Link to="technologies" offset={-95} className="footer-nav">Technologies</Link>
                                 <br />
-                                <Link to="technologies" className="footer-nav">Technologies</Link>
+                                <Link to="services" offset={-250} className="footer-nav">Services</Link>
                                 <br />
-                                <Link to="contacts" className="footer-nav">Contacts</Link>
+                                <Link to="contacts" offset={-25} className="footer-nav">Contacts</Link>
                             </div>
                         </div>
                     </div>
@@ -54,40 +49,37 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="row align-items-center">
+            <div className="social-icons row align-items-center">
                 <div className="d-flex justify-content-center">
-                    <FacebookShareButton
-                        url={"https://www.youtube.com/channel/UCj4YRR8sRqBzt1L8sRFcwmQ"}
-                        quote={"FrontEnd Developer based in London, with skills in ReactJS, Bootstrap5, JS, HTML, CSS, SASS and NodeJS at the latest standard. Building responsive UI/UX Designs with a mobile-friendly mentality."}
-                        hastag="#javascript #reactjs #webdevelopment"
-                    >
-
-                        <FacebookIcon className="mx-3" size={36} />
-                    </FacebookShareButton>
-                    <TwitterShareButton
-                        url={"https://www.youtube.com/channel/UCj4YRR8sRqBzt1L8sRFcwmQ"}
-                        quote={"FrontEnd Developer based in London, with skills in ReactJS, Bootstrap5, JS, HTML, CSS, SASS and NodeJS at the latest standard. Building responsive UI/UX Designs with a mobile-friendly mentality."}
-                        hastag="#javascript #reactjs #webdevelopment"
-                    >
-
-                        <TwitterIcon className="mx-3" size={36} />
-                    </TwitterShareButton>
-                    <RedditShareButton
-                        url={"https://www.youtube.com/channel/UCj4YRR8sRqBzt1L8sRFcwmQ"}
-                        quote={"FrontEnd Developer based in London, with skills in ReactJS, Bootstrap5, JS, HTML, CSS, SASS and NodeJS at the latest standard. Building responsive UI/UX Designs with a mobile-friendly mentality."}
-                        hastag="#javascript #reactjs #webdevelopment"
-                    >
-
-                        <RedditIcon className="mx-3" size={36} />
-                    </RedditShareButton>
-                    <LinkedinShareButton
-                        url={"https://www.youtube.com/channel/UCj4YRR8sRqBzt1L8sRFcwmQ"}
-                        quote={"FrontEnd Developer based in London, with skills in ReactJS, Bootstrap5, JS, HTML, CSS, SASS and NodeJS at the latest standard. Building responsive UI/UX Designs with a mobile-friendly mentality."}
-                        hastag="#javascript #reactjs #webdevelopment"
-                    >
-
-                        <LinkedinIcon className="mx-3" size={36} />
-                    </LinkedinShareButton>
+                    <SocialIcon
+                    className="s-icon mx-1"
+                    bgColor="black"
+                    fgColor="white"
+                    label="GitHub"
+                    style={{ height: 42, width: 42 }}
+                    url="https://github.com/CodrinCarpovici"
+                    />
+                    <SocialIcon
+                    className="s-icon mx-1"
+                    fgColor="white"
+                    label="LinkedIn"
+                    style={{ height: 40, width: 40 }}
+                    url="https://www.linkedin.com/in/codrin-gabriel-c-31b4b899/"
+                    />
+                    <SocialIcon
+                    className="s-icon mx-1"
+                    fgColor="white"
+                    label="Instagram"
+                    style={{ height: 40, width: 40 }}
+                    url="https://www.instagram.com/codrincarpovici/"
+                    />
+                    <SocialIcon
+                    className="s-icon mx-1"
+                    fgColor="white"
+                    label="Facebook"
+                    style={{ height: 40, width: 40 }}
+                    url="https://www.facebook.com/gabriel.carpovici.1/"
+                    />
                 </div>
                 <p className="pt-3 text-center">
                     Copyright&copy;

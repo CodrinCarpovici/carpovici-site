@@ -1,17 +1,19 @@
 import Typed from 'react-typed';
 import Particles from 'react-particles-js';
 import { Link } from 'react-scroll';
+import headerBG from '../assets/img/headerBG.svg'
 
 const Header = (props) => {
     return (
         
         <div className="header-wrapper">
+            <img className="headerBG" src={headerBG} alt="header-Background"></img>
             <Particles
             className="particles-canvas"
             params={{
               particles: {
                 number: {
-                  value: 30
+                  value: 60
                 },
                 density: {
                   enable: true,
@@ -43,7 +45,7 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-    title: 'FrontEnd Web Development'
+    title: 'Web Development'
 }
 
 export default Header
