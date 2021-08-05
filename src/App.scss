@@ -275,10 +275,6 @@ body {
   }
 
   @media (max-width: 768px) {
-    .particles-canvas {
-      display: none;
-    }
-
     .main-info h1 {
       font-size: 1.5rem !important;
     }
@@ -751,25 +747,9 @@ body {
       }
     }
 
-    @media (max-width: 768px) {
-      .projects-img-box {
-        left: 5%;
-      }
-    }
-
-    @media (max-width: 540px) {
-      .projects-img-box {
-        left: 25%;
-      }
-    }
-
     @media (max-width: 375px) {
       .popupbox-wrapper {
         font-size: 95%;
-      }
-
-      .projects-img-box {
-        left: 12%;
       }
     }
 
@@ -781,7 +761,6 @@ body {
 
       .projects-img-box {
         width: 100% !important;
-        left: 0%;
       }
     }
   }
