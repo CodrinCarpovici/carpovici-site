@@ -7,7 +7,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
- 
+
     const handleClick = (e) => {
         e.preventDefault();
         const hideMenu = document.getElementById("navbarSupportedContent");
@@ -15,7 +15,7 @@ const Navbar = () => {
         const handleToggler = document.getElementById("toggler");
         handleToggler.classList.add("collapsed");
     }
- 
+
     const handleState = (e) => {
         e.preventDefault();
         if (open) {
@@ -47,7 +47,7 @@ const Navbar = () => {
                             <Link onClick={handleClick} to="projects" offset={0} className="nav-link" >Projects</Link>
                         </li>
                         <li className="nav-item" >
-                            <Link onClick={handleClick}  to="technologies" offset={-95} className="nav-link" >Technologies</Link>
+                            <Link onClick={handleClick} to="technologies" offset={-95} className="nav-link" >Technologies</Link>
                         </li>
                         <li className="nav-item" >
                             <Link onClick={handleClick} to="services" offset={-250} className="nav-link" >Services</Link>

@@ -3,6 +3,9 @@ import underConstruction from '../assets/img/underConstruction.jpg'
 import faqCard from '../assets/img/faqCard.png'
 import taskTracker from '../assets/img/taskTracker.png'
 import projectsBg from '../assets/img/projectsBG.svg'
+//Animations
+import Flip from 'react-reveal/Flip'
+import { motion } from 'framer-motion'
 // FONT AWESOME IMPORTS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
@@ -145,39 +148,72 @@ const Projects = () => {
     return (
         <div id="projects" className="projects-wrapper">
             <div className="container">
-            <div className="d-flex justify-content-center my-5">
-                <h1 className="text-uppercase text-center header">Projects</h1>
+
+                <div className="d-flex justify-content-center my-5">
+                    <Flip left cascade>
+                        <h1 className="text-uppercase text-center header">Projects</h1>
+                    </Flip>
                 </div>
                 <div className="img-box-wrapper row justify-content-center">
-                    <div className="col projects-img-box justify-content-center " onClick={openPopupboxFAQCard}>
+
+                    <motion.div
+                        whileHover={{
+                            scale: 1.1,
+                            originX:0,
+                            textShadow: "0px 0px 8px rgb(255,255,255)",
+                            boxShadow: "0px 0px 8px rgb(255,255,255)"
+                        }}
+                        className="col projects-img-box justify-content-center " onClick={openPopupboxFAQCard}>
                         <img className="projects-img" src={faqCard} alt="FAQ Accordion Card">
                         </img>
                         <div className="overflow"><h3 className="hover-text text-center">FAQ Card</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
-                    </div>
+                    </motion.div>
 
                     {/* - */}
-                    <div className="col projects-img-box justify-content-center" onClick={openPopupboxTaskTracker}>
+                    <motion.div
+                        whileHover={{
+                            scale: 1.1,
+                            originX:0,
+                            textShadow: "0px 0px 8px rgb(255,255,255)",
+                            boxShadow: "0px 0px 8px rgb(255,255,255)"
+                        }}
+                        className="col projects-img-box justify-content-center" onClick={openPopupboxTaskTracker}>
                         <img className="projects-img" src={taskTracker} alt="React Task Tracker">
                         </img>
                         <div className="overflow"><h3 className="hover-text-b text-center">Task Tracker</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
-                    </div>
+                    </motion.div>
                     {/* - */}
-                    <div className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC3}>
+                    <motion.div
+                        whileHover={{
+                            scale: 1.1,
+                            originX:0,
+                            textShadow: "0px 0px 8px rgb(255,255,255)",
+                            boxShadow: "0px 0px 8px rgb(255,255,255)"
+                        }}
+                        className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC3}>
                         <img className="projects-img" src={underConstruction} alt="Under Construction...">
                         </img>
                         <div className="overflow"><h3 className="hover-text-c text-center">Coming Soon...</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
-                    </div>
+                    </motion.div>
                     {/* - */}
-                    <div className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC4}>
+                    <motion.div
+                        whileHover={{
+                            scale: 1.1,
+                            originX:0,
+                            textShadow: "0px 0px 8px rgb(255,255,255)",
+                            boxShadow: "0px 0px 8px rgb(255,255,255)"
+                        }}
+                        className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC4}>
                         <img className="projects-img" src={underConstruction} alt="Under Construction...">
                         </img>
                         <div className="overflow"><h3 className="hover-text-c text-center">Coming Soon...</h3></div>
                         <FontAwesomeIcon className="projects-icon" icon={faSearchPlus}></FontAwesomeIcon>
-                    </div>
+                    </motion.div>
                     {/* - */}
+
                 </div>
                 <PopupboxContainer {...popupboxConfigFAQCard} />
                 <PopupboxContainer {...popupboxConfigTaskTracker} />

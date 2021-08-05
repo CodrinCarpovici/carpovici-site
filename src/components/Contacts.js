@@ -4,6 +4,10 @@ import contactsAvatar from '../assets/img/contactsAvatar.svg'
 import greyBG from '../assets/img/greyBG.png'
 import greyBG2 from '../assets/img/greyBG2.png'
 import { useForm } from 'react-hook-form';
+//Animation
+import Flip from 'react-reveal/Flip'
+import Fade from 'react-reveal/Fade'
+import {motion} from 'framer-motion'
 
 const Contacts = () => {
 
@@ -45,14 +49,20 @@ const Contacts = () => {
                 <div className="avatar-wrapper d-flex justify-content-center">
                     <img className="grey-bg-line" src={greyBG2} alt="greyBG2"></img>
                     <img className="grey-bg" src={greyBG} alt="greyBG"></img>
-                    <img className="c-Avatar" src={contactsAvatar} alt="cAvatar"></img>
+                    <Fade>
+                        <img className="c-Avatar" src={contactsAvatar} alt="cAvatar"></img>
+                    </Fade>
                 </div>
                 <div className="text-center">
                     <div className="d-flex justify-content-center my-5">
-                        <h1 className="header">Contact Me</h1>
+                        <Flip left cascade>
+                            <h1 className="header">Contact Me</h1>
+                        </Flip>
                     </div>
                     <p>Please fill out the form below.</p>
+
                     <span className="success-message">{successMessage}</span>
+
                 </div>
                 <div className="container">
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -171,7 +181,13 @@ const Contacts = () => {
                                     <span className="error-message" role="alert">Please add a description of your query</span>
                                 )}
 
-                                <button className="btn-main-offer contacts-btn" type="submit">Submit</button>
+                                <motion.button 
+                                whileHover={{
+                                    scale: 1.1,
+                                    textShadow: "0px 0px 8px rgb(255,255,255)",
+                                    boxShadow: "0px 0px 8px rgb(255,255,255)"
+                                }} 
+                                className="btn-main-offer contacts-btn" type="submit">Submit</motion.button>
                             </div>
                         </div>
                     </form>

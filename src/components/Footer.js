@@ -3,6 +3,8 @@ import { Link } from 'react-scroll'
 import { SocialIcon } from 'react-social-icons'
 import { faClipboard } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//Animations
+import {motion} from 'framer-motion'
 
 const Footer = () => {
     return (
@@ -17,14 +19,19 @@ const Footer = () => {
                             <a href="tel:00447472272377">+447472272377</a>
                         </div>
                         <div className="d-flex">
-                            <button
+                            <motion.button
+                            whileHover={{
+                                scale: 1.1,
+                                textShadow: "0px 0px 8px rgb(255,255,255)",
+                                boxShadow: "0px 0px 8px rgb(255,255,255)"
+                            }} 
                                 className="clipboard-btn"
                                 onClick={() => navigator.clipboard.writeText('codrincarpovici@gmail.com')}
                             >
                                 codrincarpovici@gmail.com
                                 <span class="tooltiptext"><FontAwesomeIcon className="clipboard-icon" icon={faClipboard} /></span>
-                            </button>
-                            
+                            </motion.button>
+
                         </div>
                     </div>
                     <div className="col">
@@ -52,33 +59,33 @@ const Footer = () => {
             <div className="social-icons row align-items-center">
                 <div className="d-flex justify-content-center">
                     <SocialIcon
-                    className="s-icon mx-1"
-                    bgColor="black"
-                    fgColor="white"
-                    label="GitHub"
-                    style={{ height: 42, width: 42 }}
-                    url="https://github.com/CodrinCarpovici"
+                        className="s-icon mx-1"
+                        bgColor="black"
+                        fgColor="white"
+                        label="GitHub"
+                        style={{ height: 42, width: 42 }}
+                        url="https://github.com/CodrinCarpovici"
                     />
                     <SocialIcon
-                    className="s-icon mx-1"
-                    fgColor="white"
-                    label="LinkedIn"
-                    style={{ height: 40, width: 40 }}
-                    url="https://www.linkedin.com/in/codrin-gabriel-c-31b4b899/"
+                        className="s-icon mx-1"
+                        fgColor="white"
+                        label="LinkedIn"
+                        style={{ height: 40, width: 40 }}
+                        url="https://www.linkedin.com/in/codrin-gabriel-c-31b4b899/"
                     />
                     <SocialIcon
-                    className="s-icon mx-1"
-                    fgColor="white"
-                    label="Instagram"
-                    style={{ height: 40, width: 40 }}
-                    url="https://www.instagram.com/codrincarpovici/"
+                        className="s-icon mx-1"
+                        fgColor="white"
+                        label="Instagram"
+                        style={{ height: 40, width: 40 }}
+                        url="https://www.instagram.com/codrincarpovici/"
                     />
                     <SocialIcon
-                    className="s-icon mx-1"
-                    fgColor="white"
-                    label="Facebook"
-                    style={{ height: 40, width: 40 }}
-                    url="https://www.facebook.com/gabriel.carpovici.1/"
+                        className="s-icon mx-1"
+                        fgColor="white"
+                        label="Facebook"
+                        style={{ height: 40, width: 40 }}
+                        url="https://www.facebook.com/gabriel.carpovici.1/"
                     />
                 </div>
                 <p className="pt-3 text-center">

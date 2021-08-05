@@ -8,19 +8,30 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
+//Animations
+import Fade from 'react-reveal/Fade';
 
 function App() {
   return (
     <div className="App">
       <>
+      
         <Navbar />
-        <Header />
+
+        <Fade>
+        <Header />  
         <AboutMe />
+        </Fade>
+
         <Projects />
+        <Fade>
         <Technologies />
         <Services />
         <Contacts />
+        </Fade>
+        
         <Footer />
+        
       </>
     </div>
   );

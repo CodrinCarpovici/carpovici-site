@@ -57,6 +57,7 @@ html {
 ::-webkit-scrollbar {
   width: 0.625rem;
   border-radius: 100px;
+  z-index: -10;
 }
 
 ::-webkit-scrollbar-button {
@@ -368,7 +369,6 @@ body {
   }
 
   .px-btn.theme:hover {
-    transition: ease-in-out 0.3s;
     color: $primary-pink;
     background: $primary-background-gradient;
   }
@@ -732,12 +732,10 @@ body {
 
     .projects-img-box:hover .overflow {
       opacity: 70%;
-      transition: 0.3s ease-in-out;
     }
 
     .projects-img-box:hover .projects-icon {
       opacity: 70%;
-      transition: 0.3s ease-in-out;
       cursor: pointer;
     }
     /*************** POPUP BOX *******************/
@@ -966,7 +964,6 @@ body {
     color: $primary-dark-grey;
     box-shadow: 1px 2px;
     border-radius: 1rem !important;
-    transition: 0.5s ease-in-out;
   }
 
   /* Tooltip text */
