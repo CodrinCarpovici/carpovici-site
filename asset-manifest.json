@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/carpovici-site/static/css/main.26615433.chunk.css",
+    "main.js": "/carpovici-site/static/js/main.b29fa996.chunk.js",
+    "main.js.map": "/carpovici-site/static/js/main.b29fa996.chunk.js.map",
+    "runtime-main.js": "/carpovici-site/static/js/runtime-main.5ec2201e.js",
+    "runtime-main.js.map": "/carpovici-site/static/js/runtime-main.5ec2201e.js.map",
+    "static/css/2.fdbd23dc.chunk.css": "/carpovici-site/static/css/2.fdbd23dc.chunk.css",
+    "static/js/2.89e7ec56.chunk.js": "/carpovici-site/static/js/2.89e7ec56.chunk.js",
+    "static/js/2.89e7ec56.chunk.js.map": "/carpovici-site/static/js/2.89e7ec56.chunk.js.map",
+    "static/js/3.6fe94876.chunk.js": "/carpovici-site/static/js/3.6fe94876.chunk.js",
+    "static/js/3.6fe94876.chunk.js.map": "/carpovici-site/static/js/3.6fe94876.chunk.js.map",
+    "index.html": "/carpovici-site/index.html",
+    "static/css/2.fdbd23dc.chunk.css.map": "/carpovici-site/static/css/2.fdbd23dc.chunk.css.map",
+    "static/css/main.26615433.chunk.css.map": "/carpovici-site/static/css/main.26615433.chunk.css.map",
+    "static/js/2.89e7ec56.chunk.js.LICENSE.txt": "/carpovici-site/static/js/2.89e7ec56.chunk.js.LICENSE.txt",
+    "static/media/author.87f05f91.png": "/carpovici-site/static/media/author.87f05f91.png",
+    "static/media/contactsAvatar.e112a4cf.svg": "/carpovici-site/static/media/contactsAvatar.e112a4cf.svg",
+    "static/media/faqCard.2745c7ff.png": "/carpovici-site/static/media/faqCard.2745c7ff.png",
+    "static/media/greyBG.d7f14713.png": "/carpovici-site/static/media/greyBG.d7f14713.png",
+    "static/media/headerBG.747a150e.svg": "/carpovici-site/static/media/headerBG.747a150e.svg",
+    "static/media/logo.401c41f7.png": "/carpovici-site/static/media/logo.401c41f7.png",
+    "static/media/projectsBG.e501c94f.svg": "/carpovici-site/static/media/projectsBG.e501c94f.svg",
+    "static/media/servicesBG.86664ab6.svg": "/carpovici-site/static/media/servicesBG.86664ab6.svg",
+    "static/media/taskTracker.876178d7.png": "/carpovici-site/static/media/taskTracker.876178d7.png",
+    "static/media/technologiesBG.4c5efa4f.svg": "/carpovici-site/static/media/technologiesBG.4c5efa4f.svg",
+    "static/media/underConstruction.725b529a.jpg": "/carpovici-site/static/media/underConstruction.725b529a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ec2201e.js",
+    "static/css/2.fdbd23dc.chunk.css",
+    "static/js/2.89e7ec56.chunk.js",
+    "static/css/main.26615433.chunk.css",
+    "static/js/main.b29fa996.chunk.js"
+  ]
+}
