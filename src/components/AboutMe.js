@@ -37,7 +37,7 @@ const AboutMe = () => {
                             textShadow: "0px 0px 8px rgb(255,255,255)",
                             boxShadow: "0px 0px 8px rgb(255,255,255)"
                         }}
-                        className="px-btn theme-t" href="https://drive.google.com/uc?export=donwload&id=1pvlG2tfWAEI5Ke1LFhcX4yw1X8vpnqaI">Download CV</motion.a>
+                        className="px-btn theme-t" href="https://drive.google.com/uc?id=1GskK8XnNkZpofqaiQYdrlAZoDkTjEj1-&export=download">Download CV</motion.a>
                     </div>
                 </div>
 
