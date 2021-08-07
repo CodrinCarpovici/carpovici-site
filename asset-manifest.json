@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/carpovici-site/static/css/main.dd251c06.chunk.css",
-    "main.js": "/carpovici-site/static/js/main.4a7bad16.chunk.js",
-    "main.js.map": "/carpovici-site/static/js/main.4a7bad16.chunk.js.map",
+    "main.css": "/carpovici-site/static/css/main.d9126832.chunk.css",
+    "main.js": "/carpovici-site/static/js/main.641d6f9e.chunk.js",
+    "main.js.map": "/carpovici-site/static/js/main.641d6f9e.chunk.js.map",
     "runtime-main.js": "/carpovici-site/static/js/runtime-main.5ec2201e.js",
     "runtime-main.js.map": "/carpovici-site/static/js/runtime-main.5ec2201e.js.map",
     "static/css/2.fdbd23dc.chunk.css": "/carpovici-site/static/css/2.fdbd23dc.chunk.css",
-    "static/js/2.89e7ec56.chunk.js": "/carpovici-site/static/js/2.89e7ec56.chunk.js",
-    "static/js/2.89e7ec56.chunk.js.map": "/carpovici-site/static/js/2.89e7ec56.chunk.js.map",
+    "static/js/2.cbd85080.chunk.js": "/carpovici-site/static/js/2.cbd85080.chunk.js",
+    "static/js/2.cbd85080.chunk.js.map": "/carpovici-site/static/js/2.cbd85080.chunk.js.map",
     "static/js/3.6fe94876.chunk.js": "/carpovici-site/static/js/3.6fe94876.chunk.js",
     "static/js/3.6fe94876.chunk.js.map": "/carpovici-site/static/js/3.6fe94876.chunk.js.map",
     "index.html": "/carpovici-site/index.html",
     "static/css/2.fdbd23dc.chunk.css.map": "/carpovici-site/static/css/2.fdbd23dc.chunk.css.map",
-    "static/css/main.dd251c06.chunk.css.map": "/carpovici-site/static/css/main.dd251c06.chunk.css.map",
-    "static/js/2.89e7ec56.chunk.js.LICENSE.txt": "/carpovici-site/static/js/2.89e7ec56.chunk.js.LICENSE.txt",
+    "static/css/main.d9126832.chunk.css.map": "/carpovici-site/static/css/main.d9126832.chunk.css.map",
+    "static/js/2.cbd85080.chunk.js.LICENSE.txt": "/carpovici-site/static/js/2.cbd85080.chunk.js.LICENSE.txt",
     "static/media/author.87f05f91.png": "/carpovici-site/static/media/author.87f05f91.png",
     "static/media/contactsAvatar.e112a4cf.svg": "/carpovici-site/static/media/contactsAvatar.e112a4cf.svg",
     "static/media/faqCard.2745c7ff.png": "/carpovici-site/static/media/faqCard.2745c7ff.png",
-    "static/media/greyBG.d7f14713.png": "/carpovici-site/static/media/greyBG.d7f14713.png",
     "static/media/headerBG.747a150e.svg": "/carpovici-site/static/media/headerBG.747a150e.svg",
     "static/media/logo.401c41f7.png": "/carpovici-site/static/media/logo.401c41f7.png",
     "static/media/projectsBG.e501c94f.svg": "/carpovici-site/static/media/projectsBG.e501c94f.svg",
@@ -29,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.5ec2201e.js",
     "static/css/2.fdbd23dc.chunk.css",
-    "static/js/2.89e7ec56.chunk.js",
-    "static/css/main.dd251c06.chunk.css",
-    "static/js/main.4a7bad16.chunk.js"
+    "static/js/2.cbd85080.chunk.js",
+    "static/css/main.d9126832.chunk.css",
+    "static/js/main.641d6f9e.chunk.js"
   ]
 }
