@@ -163,7 +163,7 @@ const Projects = () => {
                             textShadow: "0px 0px 8px rgb(255,255,255)",
                             boxShadow: "0px 0px 8px rgb(255,255,255)"
                         }}
-                        className="col projects-img-box justify-content-center " onClick={openPopupboxFAQCard}>
+                        className="col projects-img-box d-flex justify-content-center " onClick={openPopupboxFAQCard}>
                         <img className="projects-img" src={faqCard} alt="FAQ Accordion Card">
                         </img>
                         <div className="overflow"><h3 className="hover-text text-center">FAQ Card</h3></div>
@@ -178,7 +178,7 @@ const Projects = () => {
                             textShadow: "0px 0px 8px rgb(255,255,255)",
                             boxShadow: "0px 0px 8px rgb(255,255,255)"
                         }}
-                        className="col projects-img-box justify-content-center" onClick={openPopupboxTaskTracker}>
+                        className="col projects-img-box d-flex justify-content-center" onClick={openPopupboxTaskTracker}>
                         <img className="projects-img" src={taskTracker} alt="React Task Tracker">
                         </img>
                         <div className="overflow"><h3 className="hover-text-b text-center">Task Tracker</h3></div>
@@ -192,7 +192,7 @@ const Projects = () => {
                             textShadow: "0px 0px 8px rgb(255,255,255)",
                             boxShadow: "0px 0px 8px rgb(255,255,255)"
                         }}
-                        className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC3}>
+                        className="col projects-img-box d-flex justify-content-center" onClick={openPopupboxUnderC3}>
                         <img className="projects-img" src={underConstruction} alt="Under Construction...">
                         </img>
                         <div className="overflow"><h3 className="hover-text-c text-center">Coming Soon...</h3></div>
@@ -206,7 +206,7 @@ const Projects = () => {
                             textShadow: "0px 0px 8px rgb(255,255,255)",
                             boxShadow: "0px 0px 8px rgb(255,255,255)"
                         }}
-                        className="col projects-img-box justify-content-center" onClick={openPopupboxUnderC4}>
+                        className="col projects-img-box d-flex justify-content-center" onClick={openPopupboxUnderC4}>
                         <img className="projects-img" src={underConstruction} alt="Under Construction...">
                         </img>
                         <div className="overflow"><h3 className="hover-text-c text-center">Coming Soon...</h3></div>

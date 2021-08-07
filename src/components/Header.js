@@ -33,13 +33,7 @@ const Header = (props) => {
       />
       <div id="home" className="main-info">
         <h1>{props.title}</h1>
-        <Typed
-          className="typed-string"
-          strings={["Web Design", "Frontend Development", "UI &#38; UX Design", "Web Development"]}
-          typeSpeed={40}
-          backSpeed={60}
-          loop
-        />
+        <Link to="about" offset={-196} className="px-btn theme">About Me</Link>
         <Link 
         to="contacts" className="btn-main-offer">Contact Me</Link>
       </div>
@@ -48,7 +42,7 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-  title: 'Web Development'
+  title: "Hi I'm a Web Developer,"
 }
 
 export default Header

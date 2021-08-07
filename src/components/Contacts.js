@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import contactsAvatar from '../assets/img/contactsAvatar.svg'
-import greyBG from '../assets/img/greyBG.png'
-import greyBG2 from '../assets/img/greyBG2.png'
 import { useForm } from 'react-hook-form';
 //Animation
 import Flip from 'react-reveal/Flip'
@@ -47,8 +45,6 @@ const Contacts = () => {
 
             <div className="contacts-wrapper">
                 <div className="avatar-wrapper d-flex justify-content-center">
-                    <img className="grey-bg-line" src={greyBG2} alt="greyBG2"></img>
-                    <img className="grey-bg" src={greyBG} alt="greyBG"></img>
                     <Fade>
                         <img className="c-Avatar" src={contactsAvatar} alt="cAvatar"></img>
                     </Fade>
