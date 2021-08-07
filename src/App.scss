@@ -114,6 +114,7 @@ body {
   padding: 0;
   overflow: overlay;
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
 
   /******************************** NAVBAR **********************************/
   .navbar {
@@ -249,19 +250,25 @@ body {
 
       h1 {
         font-weight: 700;
-        text-transform: uppercase;
+        width: 30rem;
+        position: absolute;
+        top: 10%;
+        font-size: 5rem;
         background: linear-gradient(to right, $primary-violet, $primary-blue);
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
-      /*---------- TYPED TEXT -----------*/
-      .typed-string {
+      /*---------- HEADER MAIN OFFER BUTTON -----------*/
+      .btn-main-offer {
         font-size: 2rem;
-        color: $primary-blue;
       }
 
-      /*---------- HEADER MAIN OFFER BUTTON -----------*/
+      @media (max-width: 768px) {
+        .btn-main-offer {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 
@@ -276,7 +283,7 @@ body {
 
   @media (max-width: 768px) {
     .main-info h1 {
-      font-size: 1.5rem !important;
+      font-size: 4rem !important;
     }
 
     .typed-string {
@@ -284,6 +291,12 @@ body {
     }
     .navbar-brand {
       width: 7rem;
+    }
+  }
+
+  @media (max-width:410px) {
+    .main-info h1 {
+      font-size: 2.7rem !important;
     }
   }
 
@@ -297,7 +310,6 @@ body {
 
   /*************** ABOUT TEXT *******************/
   #about-header {
-    font-size: 2.813rem;
     font-weight: 700;
     margin: 0 0 0.625rem;
     color: $primary-white !important;
@@ -335,8 +347,7 @@ body {
     border: 0.125rem solid $primary-pink;
   }
   .px-btn {
-    padding: 0 1.25rem;
-    line-height: 2.625rem;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
     border: 0.125rem solid transparent;
     position: relative;
     display: inline-block;
@@ -346,15 +357,25 @@ body {
     -o-transition: ease all 0.35s;
     -webkit-transition: ease all 0.35s;
     transition: ease all 0.35s;
-    border-radius: 0.313rem;
-    font-size: 1rem;
-    font-weight: 500;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 0.125rem;
+  }
+
+  @media (max-width:768px) {
+    .px-btn {
+      font-size: 1.5rem;
+    }
   }
 
   .px-btn:hover {
     background: $primary-hover-pink-gradient;
     color: $primary-white;
     transition: ease-in-out 0.4s;
+    cursor: pointer;
   }
 
   .px-btn.theme-t {
@@ -642,18 +663,18 @@ body {
     margin-bottom: 1rem;
 
     .img-wrapper {
-      margin-right: 12rem;
+      margin-right: 6rem;
     }
 
     .projects-bg-img {
-      width: 50rem;
-      height: 30rem;
+      width: 25rem;
+      height: 25rem;
     }
 
     @media (max-width: 1024px) {
       .projects-bg-img {
-        width: 40rem;
-        height: 30rem;
+        width: 25rem;
+        height: 25rem;
       }
     }
     @media (max-width: 540px) {
@@ -672,10 +693,10 @@ body {
       margin: 1rem;
 
       .projects-img {
-        width: 15rem;
-        height: 10rem;
+        width: 16rem;
+        height: 11rem;
         border-radius: 1rem !important;
-        border: 1px solid $primary-violet;
+        border: 3px solid $primary-violet;
         padding: 0.2rem 0.2rem;
       }
 
@@ -692,8 +713,8 @@ body {
         position: absolute;
         opacity: 0;
         background: $primary-dark;
-        width: 15rem;
-        height: 10rem;
+        width: 16rem;
+        height: 11rem;
         border-radius: 1rem !important;
         top: 0;
         border: 1px solid $primary-blue;
@@ -719,8 +740,7 @@ body {
       .projects-icon {
         position: absolute;
         opacity: 0;
-        margin-left: -8rem;
-        margin-top: 5.5rem;
+        margin-top: 6rem;
         color: $primary-blue;
         font-size: 1.5rem;
       }
@@ -784,7 +804,8 @@ body {
     height: 100vh;
     width: 100%;
     display: inline-block;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
+
 
     .avatar-wrapper {
       position: relative;
@@ -924,10 +945,12 @@ body {
   .btn-main-offer {
     border: 1px solid $primary-pink;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: 700;
     padding: 0.625rem 0.75rem 0.75rem 0.75rem;
     color: $primary-violet;
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     cursor: pointer;
   }
 
@@ -943,6 +966,12 @@ body {
     color: $primary-dark-grey;
     box-shadow: 1px 2px;
     border-radius: 1rem !important;
+  }
+
+  @media(max-width:768px) {
+    .btn-main-offer {
+      font-size: 1.5rem;
+    }
   }
 
   /* Tooltip text */
@@ -986,8 +1015,9 @@ body {
     color: $primary-dark-grey;
     padding: 3rem;
     width: 100%;
-    height: 20%;
+    height: 20rem;
     display: inline-block;
+    position: relative;
 
     a {
       text-decoration: none;
@@ -1018,10 +1048,25 @@ body {
   /********************ALL HEADERS***********************/
   .header {
     font-weight: 700;
+    font-size: 3.5rem;
     text-transform: uppercase;
     color: $primary-white;
     background: $primary-background-gradient;
     padding: 1rem 1rem;
     border-radius: 1rem !important;
+  }
+
+  .smaller {
+    font-size: 2rem;
+  }
+
+  @media (max-width:768px) {
+    .header {
+      font-size: 2rem;
+    }
+
+    .smaller {
+      font-size: 1.5rem;
+    }
   }
 }

@@ -53,7 +53,7 @@ const Navbar = () => {
                             <Link onClick={handleClick} to="services" offset={-250} className="nav-link" >Services</Link>
                         </li>
                         <li className="nav-item" >
-                            <Link onClick={handleClick} to="contacts" offset={-15} className="nav-link" >Contacts</Link>
+                            <Link onClick={handleClick} to="contacts" offset={10} className="nav-link" >Contacts</Link>
                         </li>
                     </ul>
 

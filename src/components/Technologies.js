@@ -22,7 +22,7 @@ const Technologies = () => {
                     </div>
                     <div className="timeline-content">
 
-                        <h3 className="header">JS, HTML &#38; CSS</h3>
+                        <h3 className="header smaller">JS, HTML &#38; CSS</h3>
 
                         <div className="timeline-txt">
 
@@ -40,7 +40,7 @@ const Technologies = () => {
                     </div>
                     <div className="timeline-content">
 
-                        <h3 className="header">ReactJS</h3>
+                        <h3 className="header smaller">ReactJS</h3>
 
                         <div className="timeline-txt">
 
@@ -57,7 +57,7 @@ const Technologies = () => {
                     </div>
                     <div className="timeline-content">
 
-                        <h3 className="header">Bootstrap &#38; SASS</h3>
+                        <h3 className="header smaller">Bootstrap &#38; SASS</h3>
 
                         <div className="timeline-txt">
 
@@ -75,7 +75,7 @@ const Technologies = () => {
                     </div>
                     <div className="timeline-content">
 
-                        <h3 className="header">NodeJS</h3>
+                        <h3 className="header smaller">NodeJS</h3>
 
                         <div className="timeline-txt">
 
