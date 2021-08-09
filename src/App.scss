@@ -248,6 +248,8 @@ body {
       bottom: 0;
       z-index: 1;
 
+      
+
       h1 {
         font-weight: 700;
         width: 30rem;
@@ -297,6 +299,12 @@ body {
   @media (max-width:410px) {
     .main-info h1 {
       font-size: 2.7rem !important;
+    }
+  }
+
+  @media(max-width:380px) {
+    .main-info h1 {
+      font-size: 2.1rem !important;
     }
   }
 
@@ -363,6 +371,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 0.125rem;
+    margin-top: 4rem;
   }
 
   @media (max-width:768px) {
@@ -439,16 +448,7 @@ body {
 
   @media (max-width: 280px) {
     .px-btn {
-      margin-left: 20%;
       margin-top: 3%;
-    }
-
-    .px-btn.theme {
-      margin-left: 23%;
-    }
-
-    .px-btn.theme-t {
-      margin-left: 20%;
     }
   }
 
@@ -528,13 +528,24 @@ body {
     }
   }
 
+  //OVERLAY
   .overlay {
-    background: rgba(#fff, 0.1);
-    height: 100vh;
-    width: 100vw;
+    background: rgba(rgb(255, 255, 255), 1);
+    height: 17rem;
+    width: 17rem;
     position: absolute;
+    top: 10rem;
     z-index: -3;
+    
   }
+
+  @media(max-width:1440px){
+    .overlay {
+      visibility: hidden;
+    }
+  }
+
+  
   /******************************* TECHNOLOGIES ********************************/
 
   .technologies {
@@ -688,6 +699,13 @@ body {
       }
     }
 
+    @media (max-width: 330px) {
+      .projects-bg-img {
+        width: 17rem;
+        height: 17rem;
+      }
+    }
+
     .projects-img-box {
       position: relative;
       margin: 1rem;
@@ -783,7 +801,11 @@ body {
         width: 100% !important;
       }
     }
+
+    
   }
+
+  
 
   .pop-link {
     width: 100%;
@@ -802,6 +824,7 @@ body {
   .contacts {
     padding: 3rem 0;
     height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: inline-block;
     margin-bottom: 20rem;
@@ -1042,6 +1065,12 @@ body {
 
     .social-icons {
       padding-top: 2rem;
+    }
+  }
+
+  @media(max-width:330px) {
+    .footer {
+      padding: 1rem;
     }
   }
 

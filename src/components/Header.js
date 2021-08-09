@@ -1,15 +1,15 @@
-import Typed from 'react-typed';
 import Particles from 'react-particles-js';
 import { Link } from 'react-scroll';
 import headerBG from '../assets/img/headerBG.svg'
 
 import {motion} from 'framer-motion'
 
-const Header = (props) => {
+const Header = () => {
   return (
 
     <div className="header-wrapper">
       <img className="headerBG" src={headerBG} alt="header-Background"></img>
+      
       <Particles
         className="particles-canvas"
         params={{
@@ -32,8 +32,9 @@ const Header = (props) => {
         }}
       />
       <div id="home" className="main-info">
-        <h1>{props.title}</h1>
-        <Link to="about" offset={-196} className="px-btn theme">About Me</Link>
+      <div className="overlay d-flex justify-content-center"></div>
+        <h1>Hi I'm a <br/>Web Developer,</h1>
+        <Link to="about" offset={-196} className="px-btn theme" >About Me</Link>
         <Link 
         to="contacts" className="btn-main-offer">Contact Me</Link>
       </div>
@@ -41,8 +42,6 @@ const Header = (props) => {
   )
 }
 
-Header.defaultProps = {
-  title: "Hi I'm a Web Developer,"
-}
+
 
 export default Header
