@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9126832.chunk.css",
-    "main.js": "/static/js/main.573d8abc.chunk.js",
-    "main.js.map": "/static/js/main.573d8abc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a07eb53b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a07eb53b.js.map",
+    "main.css": "/static/css/main.480a52a4.chunk.css",
+    "main.js": "/static/js/main.8c979c54.chunk.js",
+    "main.js.map": "/static/js/main.8c979c54.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.06c879e0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.06c879e0.js.map",
     "static/css/2.fdbd23dc.chunk.css": "/static/css/2.fdbd23dc.chunk.css",
-    "static/js/2.cbd85080.chunk.js": "/static/js/2.cbd85080.chunk.js",
-    "static/js/2.cbd85080.chunk.js.map": "/static/js/2.cbd85080.chunk.js.map",
-    "static/js/3.6fe94876.chunk.js": "/static/js/3.6fe94876.chunk.js",
-    "static/js/3.6fe94876.chunk.js.map": "/static/js/3.6fe94876.chunk.js.map",
+    "static/js/2.23e76483.chunk.js": "/static/js/2.23e76483.chunk.js",
+    "static/js/2.23e76483.chunk.js.map": "/static/js/2.23e76483.chunk.js.map",
+    "static/js/3.7c899a14.chunk.js": "/static/js/3.7c899a14.chunk.js",
+    "static/js/3.7c899a14.chunk.js.map": "/static/js/3.7c899a14.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.fdbd23dc.chunk.css.map": "/static/css/2.fdbd23dc.chunk.css.map",
-    "static/css/main.d9126832.chunk.css.map": "/static/css/main.d9126832.chunk.css.map",
-    "static/js/2.cbd85080.chunk.js.LICENSE.txt": "/static/js/2.cbd85080.chunk.js.LICENSE.txt",
+    "static/css/main.480a52a4.chunk.css.map": "/static/css/main.480a52a4.chunk.css.map",
+    "static/js/2.23e76483.chunk.js.LICENSE.txt": "/static/js/2.23e76483.chunk.js.LICENSE.txt",
     "static/media/author.87f05f91.png": "/static/media/author.87f05f91.png",
     "static/media/contactsAvatar.e112a4cf.svg": "/static/media/contactsAvatar.e112a4cf.svg",
     "static/media/faqCard.2745c7ff.png": "/static/media/faqCard.2745c7ff.png",
@@ -26,10 +26,10 @@
     "static/media/underConstruction.725b529a.jpg": "/static/media/underConstruction.725b529a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a07eb53b.js",
+    "static/js/runtime-main.06c879e0.js",
     "static/css/2.fdbd23dc.chunk.css",
-    "static/js/2.cbd85080.chunk.js",
-    "static/css/main.d9126832.chunk.css",
-    "static/js/main.573d8abc.chunk.js"
+    "static/js/2.23e76483.chunk.js",
+    "static/css/main.480a52a4.chunk.css",
+    "static/js/main.8c979c54.chunk.js"
   ]
 }
