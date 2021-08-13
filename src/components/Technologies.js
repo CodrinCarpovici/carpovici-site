@@ -9,7 +9,6 @@ const Technologies = () => {
             <div className="technologies-bg-wrapper row flex-row">
                 <img className="technologies-bg rounded float-left" src={technologiesBG} alt="technologiesBG"></img>
             </div>
-            <div className="overlay"></div>
             <div className="d-flex justify-content-center my-5">
                 <Flip left cascade>
                     <h1 className="header">Technologies</h1>
