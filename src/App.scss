@@ -39,7 +39,7 @@ $primary-font-family: "Roboto Condensed", sans-serif;
 
 html {
   max-width: 100% !important;
-  max-height: 100% !important;
+  min-height: 100% !important;
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
@@ -109,7 +109,7 @@ select:-webkit-autofill:focus {
 body {
   font-family: $primary-font-family !important;
   max-width: 100% !important;
-  max-height: 100% !important;
+  min-height: 100% !important;
   margin: 0;
   padding: 0;
   overflow: overlay;
