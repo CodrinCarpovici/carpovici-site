@@ -29,7 +29,7 @@ const Navbar = () => {
         <nav className="navbar transparent navbar-expand-lg navbar-light fixed-top">
             <div className="container">
 
-                <a className="navbar-brand" href="home"><img className='logo' src={logo} alt="logo"></img></a>
+                <a className="navbar-brand" href="https://codrincarpovici.com/"><img className='logo' src={logo} alt="logo"></img></a>
                 <button className="navbar-toggler" id="toggler" onClick={handleState} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon className="hamburger" icon={faBars} />
                 </button>
