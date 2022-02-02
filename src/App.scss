@@ -170,12 +170,14 @@ body {
       position: relative;
     }
 
-    a.active,
-    a:focus {
-      border-top: 0.1875rem solid $primary-violet;
-    }
-    a:hover {
-      border-top: 0.1875rem solid $primary-violet;
+    .nav-links {
+      a.active,
+      a:focus {
+        border-top: 0.1875rem solid $primary-violet;
+      }
+      a:hover {
+        border-top: 0.1875rem solid $primary-violet;
+      }
     }
 
     .logo {
@@ -248,8 +250,6 @@ body {
       bottom: 0;
       z-index: 1;
 
-      
-
       h1 {
         font-weight: 700;
         width: 30rem;
@@ -296,13 +296,13 @@ body {
     }
   }
 
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     .main-info h1 {
       font-size: 3.1rem !important;
     }
   }
 
-  @media (max-width:410px) {
+  @media (max-width: 410px) {
     .main-info h1 {
       font-size: 2.1rem !important;
     }
@@ -374,7 +374,7 @@ body {
     margin-top: 4rem;
   }
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     .px-btn {
       font-size: 1.5rem;
     }
@@ -536,16 +536,14 @@ body {
     position: absolute;
     top: 10rem;
     z-index: -3;
-    
   }
 
-  @media(max-width:1440px){
+  @media (max-width: 1440px) {
     .overlay {
       visibility: hidden;
     }
   }
 
-  
   /******************************* TECHNOLOGIES ********************************/
 
   .technologies {
@@ -751,7 +749,7 @@ body {
         }
 
         .hover-text-c {
-          margin-left: 20%;
+          margin-left: 13%;
         }
       }
 
@@ -801,11 +799,7 @@ body {
         width: 100% !important;
       }
     }
-
-    
   }
-
-  
 
   .pop-link {
     width: 100%;
@@ -828,7 +822,6 @@ body {
     width: 100%;
     display: inline-block;
     margin-bottom: 20rem;
-
 
     .avatar-wrapper {
       position: relative;
@@ -991,7 +984,7 @@ body {
     border-radius: 1rem !important;
   }
 
-  @media(max-width:768px) {
+  @media (max-width: 768px) {
     .btn-main-offer {
       font-size: 1.5rem;
     }
@@ -1039,7 +1032,7 @@ body {
     padding: 3rem;
     width: 100%;
     height: 20rem;
-    bottom : 0px;
+    bottom: 0px;
     display: inline-block;
     position: relative;
 
@@ -1069,7 +1062,7 @@ body {
     }
   }
 
-  @media(max-width:330px) {
+  @media (max-width: 330px) {
     .footer {
       padding: 1rem;
     }
@@ -1090,7 +1083,7 @@ body {
     font-size: 2rem;
   }
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     .header {
       font-size: 2rem;
     }
