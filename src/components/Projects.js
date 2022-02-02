@@ -120,7 +120,7 @@ const Projects = () => {
     fadeInSpeed: 500,
   };
 
-  // UNDER CONSTRUCTION 3
+  // Eurokit Hidraulica
   const openPopupboxEurokit = () => {
     const content = (
       <>
@@ -173,7 +173,7 @@ const Projects = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Coming Soon...",
+          text: "Eurokit Hidraulica",
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -184,7 +184,7 @@ const Projects = () => {
   const popupboxConfigEurokit = {
     titleBar: {
       enable: true,
-      text: "Coming Sooon...",
+      text: "Eurokit Hidraulica",
     },
     fadeIn: true,
     fadeInSpeed: 500,
