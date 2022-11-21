@@ -2,6 +2,7 @@ import React from "react";
 
 //Images
 import underConstruction from "../assets/img/underConstruction.jpg";
+import luckyshrub from "../assets/img/luckyshrub.png"
 import eurokit from "../assets/img/eurokit.png";
 import faqCard from "../assets/img/faqCard.png";
 import taskTracker from "../assets/img/taskTracker.png";
@@ -161,7 +162,7 @@ const Projects = () => {
           <a
             className="hyper-link"
             href="https://eurokit.org/"
-            onClick={() => window.open("https://eurokit.org/")}
+            onClick={() => window.open("https://eurokit.org/", "Popup")}
           >
             https://eurokit.org/
           </a>
@@ -190,16 +191,71 @@ const Projects = () => {
     fadeInSpeed: 500,
   };
 
-  // UNDER CONSTRUCTION 4
-  const openPopupboxUnderC4 = () => {
+  // Lucky Shrub
+  const openPopupboxLuckyShrub = () => {
     const content = (
       <>
         <img
           className="projects-img-popupbox"
-          src={underConstruction}
-          alt="Under Construction..."
+          src={luckyshrub}
+          alt="Lucky Shrub"
         />
-        <p>Stay tuned for future projects! </p>
+        <p>A basic retail page for a plant design company. </p>
+        <p>
+          The tech stack is: Semantic HTML5 and CSS3
+        </p>
+        <div className="pop-link">
+          <b></b>{" "}
+          <a className="hyper-link" href="#" onClick={() => window.open()}></a>
+        </div>
+        <div className="pop-link">
+          <b>GitHub:</b>{" "}
+          <a
+            className="hyper-link"
+            href="https://github.com/CodrinCarpovici/luckyShrub"
+            onClick={() =>
+              window.open(
+                "https://github.com/CodrinCarpovici/luckyShrub"
+              )
+            }
+          >
+            https://github.com/CodrinCarpovici/luckyShrub
+          </a>
+        </div>
+      </>
+    );
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Lucky Shrub Retail",
+        },
+        fadeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
+  };
+
+  const popupboxConfigLuckyShrub = {
+    titleBar: {
+      enable: true,
+      text: "Lucky Shrub Retail",
+    },
+    fadeIn: true,
+    fadeInSpeed: 500,
+  };
+
+  //Coming Soon...
+  const openPopupboxUnderC5 = () => {
+    const content = (
+      <>
+        <img
+          className="projects-img-popupbox"
+          src={luckyshrub}
+          alt="Lucky Shrub"
+        />
+        <p>Coming Soon... </p>
         <div className="pop-link">
           <b></b>{" "}
           <a className="hyper-link" href="#" onClick={() => window.open()}></a>
@@ -211,7 +267,7 @@ const Projects = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Coming Soon...",
+          text: "Lucky Shrub Retail",
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -219,10 +275,48 @@ const Projects = () => {
     });
   };
 
-  const popupboxConfigUnderC4 = {
+  const popupboxConfigUnderC5 = {
     titleBar: {
       enable: true,
-      text: "Coming Soon...",
+      text: "Lucky Shrub Retail",
+    },
+    fadeIn: true,
+    fadeInSpeed: 500,
+  };
+
+  //Coming Soon 2...
+  const openPopupboxUnderC6 = () => {
+    const content = (
+      <>
+        <img
+          className="projects-img-popupbox"
+          src={luckyshrub}
+          alt="Lucky Shrub"
+        />
+        <p>Coming Soon... </p>
+        <div className="pop-link">
+          <b></b>{" "}
+          <a className="hyper-link" href="#" onClick={() => window.open()}></a>
+        </div>
+      </>
+    );
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Lucky Shrub Retail",
+        },
+        fadeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
+  };
+
+  const popupboxConfigUnderC6 = {
+    titleBar: {
+      enable: true,
+      text: "Lucky Shrub Retail",
     },
     fadeIn: true,
     fadeInSpeed: 500,
@@ -313,21 +407,21 @@ const Projects = () => {
 
           <motion.div
             whileHover={{
-              scale: 1.1,
+              scale: 1.03,
               originX: 0,
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
             className="col projects-img-box d-flex justify-content-center"
-            onClick={openPopupboxUnderC4}
+            onClick={openPopupboxLuckyShrub}
           >
             <img
               className="projects-img"
-              src={underConstruction}
-              alt="Under Construction..."
+              src={luckyshrub}
+              alt="Lucky Shrub"
             ></img>
             <div className="overflow">
-              <h3 className="hover-text-c text-center">Coming Soon...</h3>
+              <h3 className="hover-text-c text-center">Lucky Shrub</h3>
             </div>
             <FontAwesomeIcon
               className="projects-icon"
@@ -339,7 +433,7 @@ const Projects = () => {
         <PopupboxContainer {...popupboxConfigFAQCard} />
         <PopupboxContainer {...popupboxConfigTaskTracker} />
         <PopupboxContainer {...popupboxConfigEurokit} />
-        <PopupboxContainer {...popupboxConfigUnderC4} />
+        <PopupboxContainer {...popupboxConfigLuckyShrub} />
       </div>
       <div className="img-wrapper">
         <img

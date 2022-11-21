@@ -735,22 +735,14 @@ body {
         top: 0;
         border: 1px solid $primary-blue;
         cursor: pointer;
+        text-align: center;
 
         h3 {
-          position: absolute;
-          margin-left: 21%;
           margin-top: 24%;
           color: $primary-blue;
           font-size: 1.5rem;
         }
 
-        .hover-text {
-          margin-left: 30%;
-        }
-
-        .hover-text-c {
-          margin-left: 13%;
-        }
       }
 
       .projects-icon {
